@@ -14,7 +14,7 @@ const silo = extendContent(Block, "scatter-silo", {
         table.addImageButton(Icon.arrowUpSmall, Styles.clearTransi, run(() => {
             //configure the tile to signal that it has been pressed (this sync on client to server)
             tile.configure(0)
-        })).size(50).disabled(boolf(b => !tile.entity.cons.valid()))
+        })).size(50).disabled(boolf(b => tile.entity != null && !tile.entity.cons.valid()))
     },
 
     //override configure event
