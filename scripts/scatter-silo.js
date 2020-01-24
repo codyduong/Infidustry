@@ -11,7 +11,7 @@ const siloLaunchEffect = newEffect(20, e => {
 const silo = extendContent(Block, "scatter-silo", {
     //override the method to build configuration
     buildConfiguration(tile, table){
-        table.addImageButton(Icon.arrowUpSmall, Styles.clearTransi, run(() => {
+        table.addImageButton(Icon.upOpen, Styles.clearTransi, run(() => {
             //configure the tile to signal that it has been pressed (this sync on client to server)
             tile.configure(0)
         })).size(50).disabled(boolf(b => tile.entity != null && !tile.entity.cons.valid()))
