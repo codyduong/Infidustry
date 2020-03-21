@@ -1,6 +1,6 @@
-name: "example-mod"
-displayName: "[orange]Example[gold] Mod" //what displays in the mod selection menu
-author: "Anuke"
-description: "A simple mod. Demonstrates how to make[accent] new ores[] and[orange] machines.[]"
-version: "3.1"
+name: "DuongC's Expansive Mod"
+displayName: "DuongC's Expansive Mod" 
+author: "DuongC"
+description: "Adds various new improvements that I think are good."
+version: "0.1"
 minGameVersion: "103"

@@ -1,0 +1,13 @@
+name: Big Vault
+description: A bigger, better vault.
+type: Vault
+itemCapacity: 2000
+hasItems: true
+health: 640
+size: 4
+requirements: [
+	titanium/450
+	thorium/225
+]
+category: effect
+research: vault
