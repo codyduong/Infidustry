@@ -1,35 +1,9 @@
-/*
-public class Tile getTileOutput(Tile tile, Item item, Tile from, boolean set){
-	Array<Tile> proximity = tile.entity.proximity();
-	int counter = tile.rotation();
-	Tile other = proximity.get(counter*2);
-	return other;
-}
- */
-/*
-Tile getTileTarget(Tile tile, Item item, Tile from, boolean set){
-    Array<Tile> proximity = tile.entity.proximity();
-    int counter = tile.rotation();
-    Tile other = proximity.get(counter*2);
-    return other;
-    //this is the old router code for getTileTarget.
-    /*
-    for(int i = 0; i < proximity.size; i++){
-        if(set) tile.rotation((byte)((tile.rotation() + 1) % proximity.size));
-        if(other == from && from.block() == Blocks.overflowGate) continue;
-        if(other.block().acceptItem(item, other, Edges.getFacingEdge(tile, other))){
-            return other;
-        }
-    }
-}
-*/
-
 const inserter = extendContent(Router, "inserter", {
 	draw(tile){
-		Draw.rect(region, tile.drawx(), tile.drawy(), 0);
+		Draw.rect(tile.drawx(), tile.drawy(), 0);
 		Draw.rect(arrow, tile.drawx(), tile.drawy(), rotate ? tile.rotation() * 90 : 0);
 	}
-	/*
+
 	update(tile){
 		RouterEntity entity = tile.ent();
 
@@ -39,16 +13,15 @@ const inserter = extendContent(Router, "inserter", {
 
 		if(entity.lastItem != null){
 			entity.time += 1f / speed * Time.delta();
-			Tile target = getTileOutput(tile, entity.lastItem, entity.lastInput, false);
+			Tile target = tile.entity.proximity().get(tile.rotation*2);
 
 			if(target != null && (entity.time >= 1f || !(target.block() instanceof Router))){
-				getTileOutput(tile, entity.lastItem, entity.lastInput, true);
 				target.block().handleItem(entity.lastItem, target, Edges.getFacingEdge(tile, target));
 				entity.items.remove(entity.lastItem, 1);
 				entity.lastItem = null;
 			}
 		}
 	}
-	 */
+
 })
 
