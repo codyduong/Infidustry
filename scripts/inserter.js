@@ -1,22 +1,3 @@
-const speed = 1;
-const cooldown = 0;
-
-@Override
-public boolean acceptItem(Item item, Tile tile, Tile source){
-	RouterEntity entity = tile.ent();
-
-	return tile.getTeam() == source.getTeam() && entity.lastItem == null && entity.items.total() == 0;
-}
-
-@Override
-public void handleItem(Item item, Tile tile, Tile source){
-	RouterEntity entity = tile.ent();
-	entity.items.add(item, 1);
-	entity.lastItem = item;
-	entity.time = 0f;
-	entity.lastInput = source;
-}
-
 public class Tile getTileOutput(Tile tile, Item item, Tile from, boolean set){
 	Array<Tile> proximity = tile.entity.proximity();
 	int counter = tile.rotation();
@@ -41,24 +22,19 @@ Tile getTileTarget(Tile tile, Item item, Tile from, boolean set){
 }
 */
 
-@Override
-public int removeStack(Tile tile, Item item, int amount){
-	RouterEntity entity = tile.ent();
-	int result = super.removeStack(tile, item, amount);
-	if(result != 0 && item == entity.lastItem){
-		entity.lastItem = null;
-	}
-	return result;
-}
-
 public class InserterEntity extends TileEntity{
 	Item lastItem;
 	Tile lastInput;
 	float time;
 }
 
-const inserter = extendContent(Block, "inserter", {
+const inserter = extendContent(Router, "inserter", {
 	super(name);
+
+	draw(Tile tile){
+	Draw.rect(region, tile.drawx(), tile.drawy(), 0);
+	Draw.rect(arrow, tile.drawx(), tile.drawy(), rotate ? tile.rotation() * 90 : 0);
+	}
 
 	update(Tile tile){
 		InserterEntity entity = tile.ent();
@@ -79,5 +55,6 @@ const inserter = extendContent(Block, "inserter", {
 			}
 		}
 	}
+
 })
 
