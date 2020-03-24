@@ -1,7 +1,8 @@
 const inserter = extendContent(Router, "inserter", {
+
 	draw(tile){
-		Draw.rect(tile.drawx(), tile.drawy(), 0);
-		Draw.rect(arrow, tile.drawx(), tile.drawy(), rotate ? tile.rotation() * 90 : 0);
+		Draw.rect(this.region, tile.drawx(), tile.drawy(), 0);
+		Draw.rect(this.arrow, tile.drawx(), tile.drawy(), rotate ? tile.rotation() * 90 : 0);
 	}
 
 	update(tile){
