@@ -1,10 +1,12 @@
 update: true
 solid: true
-configurable: true
+configurable: false
 localizedName: "Inserter"
 description: "Pulls off the nearby line and outputs items on the other side."
 rotate: true
 health: 50
+hasItems: true
+itemCapacity: 75
 size: 1
 requirements: [
 	copper/4
