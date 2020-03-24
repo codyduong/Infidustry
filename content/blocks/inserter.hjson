@@ -3,8 +3,8 @@ description: "Pulls off the nearby line and outputs items on the other side."
 update: true	
 solid: true	
 rotate: true
-healthL 50;
-hasItemsL true
+health: 50
+hasItems: true
 itemCapacity: 1
 size: 1
 requirements: [
