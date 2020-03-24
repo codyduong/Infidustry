@@ -1,6 +1,6 @@
 name: Inserter
 description: Pulls off the nearby line and outputs items on the other side.
-type: Inserter
+type: Router
 itemCapacity: 10
 hasItems: true
 health: 50
