@@ -29,14 +29,13 @@ public class InserterEntity extends TileEntity{
 }
 
 const inserter = extendContent(Router, "inserter", {
-	super(name);
 
-	draw(Tile tile){
+	draw(tile){
 		Draw.rect(region, tile.drawx(), tile.drawy(), 0);
 		Draw.rect(arrow, tile.drawx(), tile.drawy(), rotate ? tile.rotation() * 90 : 0);
 	}
-	
-	update(Tile tile){
+
+	update(tile){
 		InserterEntity entity = tile.ent();
 
 		if(entity.lastItem == null && entity.items.total() > 0){
