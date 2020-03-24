@@ -1,0 +1,12 @@
+name: Unloader
+description: Unloads items from any nearby non-transportation block. The type of item to be unloaded can be changed by tapping.
+itemCapacity: 10
+hasItems: true
+health: 70
+size: 1
+requirements: [
+	titanium/25
+	silicon/30
+]
+category: effect
+research: crate
