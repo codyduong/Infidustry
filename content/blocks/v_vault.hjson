@@ -1,0 +1,13 @@
+name: Vault
+description: Stores a large amount of items of each type. An unloader block can be used to retrieve items from the container.
+type: Vault
+itemCapacity: 1000
+hasItems: true
+health: 360
+size: 3
+requirements: [
+	titanium/250
+	thorium/50
+]
+category: effect
+research: container

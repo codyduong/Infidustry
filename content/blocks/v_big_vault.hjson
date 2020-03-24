@@ -1,5 +1,5 @@
 name: Big Vault
-description: A bigger, better vault.
+description: Stores a massive amount of items of each type. An unloader block can be used to retrieve items from the container.
 type: Vault
 itemCapacity: 2000
 hasItems: true
@@ -7,7 +7,7 @@ health: 640
 size: 4
 requirements: [
 	titanium/450
-	thorium/225
+	thorium/90
 ]
 category: effect
 research: vault

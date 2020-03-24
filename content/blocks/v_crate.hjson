@@ -1,0 +1,12 @@
+name: Crate
+description:  Stores a tiny amount of items of each type. An unloader block can be used to retrieve items from the container.
+type: Vault
+itemCapacity: 75
+hasItems: true
+health: 40
+size: 1
+requirements: [
+	titanium/25
+]
+category: effect
+research: router

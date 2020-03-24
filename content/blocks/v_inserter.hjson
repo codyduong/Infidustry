@@ -1,6 +1,6 @@
 name: Inserter
 description: Pulls off the nearby line and outputs items on the other side.
-type: Router
+type: Vault
 itemCapacity: 10
 hasItems: true
 health: 50
@@ -8,6 +8,5 @@ size: 1
 requirements: [
 	copper/4
 ]
-speed: 0.03
 category: distribution
 research: router
