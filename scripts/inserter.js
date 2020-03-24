@@ -15,10 +15,10 @@ const inserter = extendContent(Router, "inserter", {
 
 		if(entity.lastItem != null){
 			entity.time += 1f / speed * Time.delta();
-			Tile target = getTileTarget(tile, entity.lastItem, entity.lastInput, false);
+			Tile target = getTileOutput(tile, entity.lastItem, entity.lastInput, false);
 
 			if(target != null && (entity.time >= 1f || !(target.block() instanceof Router))){
-				getTileTarget(tile, entity.lastItem, entity.lastInput, true);
+				getTileOutput(tile, entity.lastItem, entity.lastInput, true);
 				target.block().handleItem(entity.lastItem, target, Edges.getFacingEdge(tile, target));
 				entity.items.remove(entity.lastItem, 1);
 				entity.lastItem = null;
@@ -26,6 +26,14 @@ const inserter = extendContent(Router, "inserter", {
 		}
 	}
 
+	getTileOutput(Tile tile, Item item, Tile from, boolean set){
+		Array<Tile> proximity = tile.entity.proximity();
+		int counter = tile.rotation();
+		Tile other = proximity.get(counter*2);
+		return other;
+	}
+
+	/*
 	Tile getTileTarget(Tile tile, Item item, Tile from, boolean set){
 		Array<Tile> proximity = tile.entity.proximity();
 		int counter = tile.rotation();
@@ -41,6 +49,5 @@ const inserter = extendContent(Router, "inserter", {
 			}
 		}
 		*/
-		return null;
 	}
 })

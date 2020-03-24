@@ -1,4 +1,4 @@
-# Changes v0.2.7
+# Changes v0.2.8
 
 (1x1) Crate - added smaller container 
 	75 items, 40 health
@@ -17,4 +17,6 @@
 	2000 items, 640 health
 	450 titanium
 	90 thorium
+
+Inserter - takes items off a belt and outputs on other side
 	
