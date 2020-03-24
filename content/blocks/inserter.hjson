@@ -3,7 +3,7 @@ solid: true
 configurable: true
 localizedName: "Inserter"
 description: "Pulls off the nearby line and outputs items on the other side."
-category: distribution
+rotate: true
 health: 50
 size: 1
 hasItems: true
