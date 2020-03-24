@@ -4,9 +4,8 @@ const inserter = extendContent(Router, "inserter", {
 	draw(tile){
 		Draw.rect(this.region, tile.drawx(), tile.drawy(), 0);
         Draw.rect(arrow, tile.drawx(), tile.drawy(), rotate ? tile.rotation() * 90 : 0);
-	}
+	},
 
-	/*
 	update(tile){
 		RouterEntity entity = tile.ent();
 
@@ -25,6 +24,6 @@ const inserter = extendContent(Router, "inserter", {
 			}
 		}
 	}
-	 */
+
 })
 
