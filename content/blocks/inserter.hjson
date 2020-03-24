@@ -1,5 +1,6 @@
 localizedName: "Inserter"
 description: "Pulls off the nearby line and outputs items on the other side."
+type: inserter
 update: true	
 solid: true	
 rotate: true
