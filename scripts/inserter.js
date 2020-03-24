@@ -1,5 +1,5 @@
 const inserter = extendContent(Router, "inserter", {
-
+	/*
 	update(Tile tile){
 		var entity = tile.ent();
 
@@ -16,6 +16,6 @@ const inserter = extendContent(Router, "inserter", {
 			}
 		}
 	},
-
+	*/
 })
 
