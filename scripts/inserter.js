@@ -1,4 +1,15 @@
 const inserter = extendContent(Router, "inserter", {
+
+	Router(tile.Name){
+		solid = true;
+		update = true;
+		hasItems = true;
+		itemCapacity = 1;
+		group = BlockGroup.transportation;
+		unloadable = false;
+		entityType = RouterEntity::new;
+	}
+
 	update(Tile tile){
 		var entity = tile.ent();
 
