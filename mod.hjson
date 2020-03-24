@@ -1,6 +1,6 @@
 name: "Infidustry"
-displayName: "Infinite Improvements" 
+displayName: "Infidustry" 
 author: "DuongC"
 description: "Adds various new improvements that I think are good."
-version: "0.2.4"
+version: "0.2.5"
 minGameVersion: "103"
