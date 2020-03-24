@@ -1,9 +1,11 @@
+/*
 public class Tile getTileOutput(Tile tile, Item item, Tile from, boolean set){
 	Array<Tile> proximity = tile.entity.proximity();
 	int counter = tile.rotation();
 	Tile other = proximity.get(counter*2);
 	return other;
 }
+ */
 /*
 Tile getTileTarget(Tile tile, Item item, Tile from, boolean set){
     Array<Tile> proximity = tile.entity.proximity();
@@ -27,7 +29,7 @@ const inserter = extendContent(Router, "inserter", {
 		Draw.rect(region, tile.drawx(), tile.drawy(), 0);
 		Draw.rect(arrow, tile.drawx(), tile.drawy(), rotate ? tile.rotation() * 90 : 0);
 	}
-
+	/*
 	update(tile){
 		RouterEntity entity = tile.ent();
 
@@ -47,6 +49,6 @@ const inserter = extendContent(Router, "inserter", {
 			}
 		}
 	}
-
+	 */
 })
 
