@@ -1,11 +1,4 @@
 const inserter = extendContent(Router, "inserter", {
-	update = true
-	solid = true
-	rotate = true;
-	health = 50;
-	hasItems = true;
-	itemCapacity = 1;
-	size = 1;
 
 	update(Tile tile){
 		var entity = tile.ent();
