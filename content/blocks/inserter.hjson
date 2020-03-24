@@ -1,10 +1,14 @@
-name: Inserter
-description: Pulls off the nearby line and outputs items on the other side.
-type: Router
-itemCapacity: 10
-hasItems: true
+update: true
+solid: true
+configurable: true
+localizedName: "Inserter"
+description: "Pulls off the nearby line and outputs items on the other side."
+category: distribution
 health: 50
 size: 1
+hasItems: true
+itemCapacity: 1
+
 requirements: [
 	copper/4
 ]
