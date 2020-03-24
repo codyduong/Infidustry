@@ -1,4 +1,4 @@
-# Changes v0.2.2
+# Changes v0.2.3
 
 (1x1) Crate - added smaller container 
 	75 items, 40 health

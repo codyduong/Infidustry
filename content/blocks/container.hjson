@@ -1,6 +1,5 @@
 name: Container
 description: Stores a small amount of items of each type. An unloader block can be used to retrieve items from the container.
-type: Vault
 itemCapacity: 300
 hasItems: true
 health: 160
