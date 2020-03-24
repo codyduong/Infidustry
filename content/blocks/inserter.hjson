@@ -6,9 +6,6 @@ description: "Pulls off the nearby line and outputs items on the other side."
 rotate: true
 health: 50
 size: 1
-hasItems: true
-itemCapacity: 1
-
 requirements: [
 	copper/4
 ]
