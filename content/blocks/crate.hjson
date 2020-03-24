@@ -9,4 +9,4 @@ requirements: [
 	titanium/25
 ]
 category: effect
-research: router
+research: unloader
