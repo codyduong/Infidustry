@@ -1,5 +1,7 @@
 # Changes v0.2.18
 
+i have no idea what im doing
+
 (1x1) Crate - added smaller container 
 	75 items, 40 health
 	25 titanium
